@@ -1,0 +1,9 @@
+requests==2.32.2
+beautifulsoup4==4.12.3
+# portrait-only (not needed by daily workflow):
+Pillow
+opencv-python
+rembg
+onnxruntime
+requests
+beautifulsoup4

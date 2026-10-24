@@ -1,0 +1,22 @@
+﻿# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv-1/
+venv/
+env/
+
+# Private source photographs
+data/source-photo.jpeg
+data/source-prepped.png
+
+# Environment variables and secrets
+.env
+.env.*
+
+# IDE and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
