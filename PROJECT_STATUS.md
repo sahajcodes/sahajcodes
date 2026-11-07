@@ -2,7 +2,7 @@
 
 ## Workspace inspection
 - No existing project files or image/font assets were present in the available workspace.
-- The only supplied file was the project brief.
+- The supplied portrait and laptop character PNGs have now been added to the project.
 - Required original assets are missing: `assets/id.png` and `assets/laptop-character.png`.
 
 ## Completed
@@ -33,16 +33,20 @@
 - `scripts/verify.py`
 - `scripts/verify.py`
 
-## Pending
-- Add the exact original portrait as `assets/id.png`.
-- Add the exact laptop character image as `assets/laptop-character.png`.
-- Embed both PNGs as base64 in the designated SVGs, preserving transparency and aspect ratio.
-- Re-run rendering/verification and create `github-profile-cherry-matcha.zip`.
+## Completed after image upload
+- Added the exact supplied portrait as `assets/id.png` (RGBA, 1538 × 2047).
+- Added the exact supplied laptop character as `assets/laptop-character.png` (RGBA, 1199 × 1312).
+- Embedded portrait in `hero.svg` and `id-dashboard.svg` as base64 PNG data.
+- Embedded laptop character in `connect.svg` as base64 PNG data.
+- Preserved both original PNG files unchanged, including alpha channels.
+- Regenerated static screenshots for all five sections and the full profile.
+- Re-ran XML and static SVG policy checks successfully.
+- Packaged the image-complete project ZIP.
 
 ## Known limitations
 - GitHub's actual sanitized README rendering cannot be verified from this local workspace.
 - SVG SMIL/CSS animation support can vary across GitHub's image rendering pipeline; static base states are included.
-- Portrait and laptop artwork are intentionally not fabricated or substituted.
+- Animation playback and GitHub sanitization are not guaranteed by local static rendering; see `VERIFICATION.md`.
 
 ## Next action
-Provide the two original transparent PNG assets. Once available, embed and verify them, then replace the draft ZIP with the final image-complete ZIP.
+Optional next step: review the preview and publish the project to the `sahajcodes` profile repository.

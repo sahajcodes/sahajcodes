@@ -1,19 +1,17 @@
 # Verification report
 
-## Static checks — passed
+## Static checks
 
-All five SVGs parse as valid XML. Automated checks confirm no JavaScript, no `foreignObject`, no external href dependencies, and reduced-motion CSS in each SVG.
+- **assets/about-life.svg**: XML valid; no JavaScript; no `foreignObject`; no external image/font references; reduced-motion CSS present.
+- **assets/connect.svg**: XML valid; no JavaScript; no `foreignObject`; no external image/font references; reduced-motion CSS present.
+- **assets/hero.svg**: XML valid; no JavaScript; no `foreignObject`; no external image/font references; reduced-motion CSS present.
+- **assets/id-dashboard.svg**: XML valid; no JavaScript; no `foreignObject`; no external image/font references; reduced-motion CSS present.
+- **assets/stack.svg**: XML valid; no JavaScript; no `foreignObject`; no external image/font references; reduced-motion CSS present.
 
-## Rendering — passed locally
+## Browser checks
 
-All five SVGs were rasterized locally with CairoSVG and a full-page static montage was generated in `preview/screenshots/`. These are static render checks, not time-sampled animation captures.
+Local Chromium screenshots are generated for each SVG and the full preview page. This confirms local rendering only, not GitHub sanitization or animation playback in GitHub README surfaces.
 
-## Not verified
+## Pending image checks
 
-- Actual GitHub README SVG sanitization/animation behavior was not tested against GitHub itself.
-- The requested 0s/2s/5s/9s/13s animation frame captures were not performed; local static rendering does not validate those animation states.
-- Portrait and laptop character accuracy, transparency, clipping, and embedding remain untestable until the two original PNG assets are supplied.
-
-## Browser limitation
-
-A headless Chromium screenshot attempt did not complete within the execution window. CairoSVG rendering was used for deterministic static visual checks instead.
+Portrait accuracy/transparency and laptop character accuracy/transparency cannot be tested until the two original PNG assets are supplied.
